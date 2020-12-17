@@ -1,0 +1,8 @@
+#!/bin/bash
+
+result=$(gcc -v 2>&1)
+if echo $result | grep ": gcc:" >/dev/null; then
+	echo "Install gcc"
+else
+	gcc arrayList.c bool.h extend.c parser.c utilities.c -o parser
+fi
