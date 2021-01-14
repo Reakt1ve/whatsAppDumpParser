@@ -10,7 +10,7 @@ fi
 
 # Записать файл в папку bin
 if ls /bin | grep parser > /dev/null; then
-	cp -a ./parser /bin
-else
 	:
+else
+	cp -a ./parser /bin
 fi
